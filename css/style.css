@@ -139,6 +139,11 @@ body {
    border: none;
    box-shadow: 0 13px 24px 0 rgba(251, 241, 56, 0.3);
    cursor: pointer;
+   transition: 0.3s;
+}
+.hero-btn:hover {
+   background-color: var(--color);
+   color: var(--accent-color);
 }
 .hero-bg {
    height: clamp(493px, 50vw, 852px);
@@ -195,18 +200,16 @@ body {
 .cart-table {
    /* height: 374px; */
    border: 1px solid rgba(43, 53, 65, 0.5);
-   padding-left: 30px;
-   padding-right: 30px;
-   padding-top: 20px;
-
+   padding:20px 30px;
+   background-color: transparent;
 }
-.cart-tableone {
-   border: 1px solid rgba(43, 53, 65, 0.5);
-   padding-left: 30px;
-   padding-right: 30px;
-   padding-top: 20px;
-
+.cart-table:hover {
+   background: linear-gradient(180deg, #fbf138 0%, rgba(253, 249, 182, 0.45) 100%);
+   border: none;
 }
+
+
+
 .cart-table:nth-child(1) {
    grid-area: a;
 }
@@ -232,23 +235,39 @@ body {
    font-size: 18px;
    color: #010101;
    text-align: right;
+   padding: 0;
+   margin: 0;
 
 }
-.dateone {
-   font-weight: 400;
-   font-size: 18px;
-   color: #010101;
-   text-align: right;
+.timetadle-iconone {
+   margin-top: 125px;
+   margin-bottom: 28px;
    
 }
-.timetadle-icon {
-   margin-top: 50px;
+.timetadle-icontwo {
+   margin-top: 191px;
+   margin-bottom: 40px;
+}
+.timetadle-iconfree {
+   margin-top: 133px;
+   margin-bottom: 40px;
+}
+.timetadle-iconfour {
+   margin-top: 139px;
+   margin-bottom: 40px;
+}
+.timetadle-iconfive {
+   margin-top: 94px;
+   margin-bottom: 40px;
+}
+.timetadle-iconsix {
+   margin-top: 182px;
+   margin-bottom: 40px;
 }
 .table-deck {
-   margin-top: 30px;
    font-weight: 700;
    font-size: 18px;
-   line-height: 125%;
+   margin: 0;
  }
 /* @media (max-width: 1000px) {
    .table {
@@ -303,6 +322,11 @@ body {
    border: none;
    box-shadow: 0 13px 24px 0 rgba(251, 241, 56, 0.3);
    cursor: pointer;
+   transition: 0.3s;
+}
+.form-btn:hover {
+   background-color: var(--color);
+   color: var(--accent-color);
 }
 .email-form {
    width: 372px;
@@ -347,6 +371,11 @@ label {
    box-shadow: 0 13px 24px 0 rgba(251, 241, 56, 0.3);
    cursor: pointer;
    margin-top: 34px;
+   transition: 0.3s;
+}
+.about-btn:hover {
+   background-color: var(--color);
+   color: var(--accent-color);
 }
 .about-img {
    display: block;
@@ -373,14 +402,18 @@ label {
    opacity: 0.6;
 }
 /* ------footer----- */
-
+footer {
+   background-color: #F3F3F3;
+}
 .footer {
    display: flex;
    align-items: center;
    gap: 92px;
    padding-top: 50px;
    padding-bottom: 30px;
-   margin: 0;
+   margin-top: 0;
+   margin-bottom: 30px;
+   
    
 }
 .logo-footer {
@@ -409,9 +442,10 @@ label {
    height: 1px;
    background-color: transparent;
 }
-.link-footer:hover:after {
+.link-footer:hover::after {
    background-color: var(--color);
 }
+
 .footer-email {
    margin-right: 150px;
    padding: 0;
@@ -431,7 +465,17 @@ label {
    top: 10px;
    padding: 0;
 }
-
-
+.footer-copy {
+   display: flex;
+   justify-content: space-between;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 150%;
+   opacity: 0.3;
+}
+.footer-source {
+   text-decoration-color: var(--color);
+   color: var(--color);
+}
 
 
